@@ -1,3 +1,5 @@
+![Docker Pulls](https://img.shields.io/docker/pulls/kaneymhf/docker-laravel-snmp) [![](https://images.microbadger.com/badges/image/kaneymhf/docker-laravel-snmp.svg)](https://microbadger.com/images/kaneymhf/docker-laravel-snmp "Get your own image badge on microbadger.com") ![Docker Stars](https://img.shields.io/docker/stars/kaneymhf/docker-laravel-snmp) [![](https://images.microbadger.com/badges/version/kaneymhf/docker-laravel-snmp.svg)](https://microbadger.com/images/kaneymhf/docker-laravel-snmp "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/license/kaneymhf/docker-laravel-snmp.svg)](https://microbadger.com/images/kaneymhf/docker-laravel-snmp "Get your own license badge on microbadger.com")
+
 # Docker Laravel
 
 This images contains an instance of apache 2.4 and php 7.3 on port 80, based on CentOS 7 Linux, with all the requeriments to run Laravel 6.x and php snmp extension
