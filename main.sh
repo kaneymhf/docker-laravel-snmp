@@ -6,7 +6,7 @@ set -x
 mv /etc/httpd/conf.d/application.conf /etc/httpd/conf.d/$APPLICATION.conf
 sed -i "s/application/$APPLICATION/g" /etc/httpd/conf.d/$APPLICATION.conf
 
-sudo chown -R apache:apache /var/www/html/$APPLICATION
+sudo chown -R user:apache /var/www/html/$APPLICATION
 
 # Adjusts Laravel Permissions
 sudo find /var/www/html/$APPLICATION/ -type f -exec chmod 644 {} \; 
