@@ -17,7 +17,10 @@ This images contains an instance of apache 2.4 and php 7.3 on port 80, based on 
 
 |  Environment |       Type       | Default |                        Usage                        |
 |:------------:|:----------------:|:-------:|:---------------------------------------------------:|
-|    APPLICATION   |      String      | application |                Set the application nanme               |
+|    APPLICATION   |      String      | application |                Set the application name               |
+| INSTALLED | Boolean<br>(0/1) |    0    | Set to 1 if application is already installed |
+
+The *INSTALLED* enviroment sets Laravel corrects permissions to all folders and files, if not setted all system will be 775 permissions.
 
 * The following volume is exposed by this image
 

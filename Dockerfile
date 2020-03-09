@@ -1,6 +1,7 @@
 FROM centos:7
 
 ENV APPLICATION application
+ENV INSTALLED 0
 
 LABEL Maintainer="Maykon Facincani <facincani.maykon@gmail.com>"
 LABEL Description="Apache 2.4 & PHP 7.3 based on CentOS Linux."
