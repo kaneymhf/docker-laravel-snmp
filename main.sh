@@ -17,7 +17,7 @@ sudo chmod -R ug+rwx /var/www/html/$APPLICATION/storage /var/www/html/$APPLICATI
 
 sudo chmod 775 /var/www/html/$APPLICATION/.env
 
-su -c 'cd /var/www/html/$APPLICATION && php artisan config:clear'
+su -c 'cd /var/www/html/$APPLICATION && php artisan optimize:clear'
 su -c 'cd /var/www/html/$APPLICATION && composer dump-autoload'
 
 # Starts Apache

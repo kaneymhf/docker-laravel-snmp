@@ -1,7 +1,6 @@
 FROM centos:7
 
 ENV APPLICATION application
-ENV INSTALLED 0
 
 LABEL Maintainer="Maykon Facincani <facincani.maykon@gmail.com>"
 LABEL Description="Apache 2.4 & PHP 7.3 based on CentOS Linux."
@@ -13,7 +12,7 @@ RUN yum -y install epel-release yum-utils
 
 RUN yum-config-manager --enable remi-php73
 
-RUN yum -y install php sudo httpd httpd-tools mod_ssl openssl
+RUN yum -y install php sudo httpd httpd-tools mod_ssl openssl mod_security mod_security_crs
 RUN yum install -y php php-devel php-gd php-mbstring php-mcrypt php-mysqlnd php-pear php-xml php-opcache
 
 RUN yum install -y php-intl php-bcmath php-snmp php-pdo php-pgsql php-pecl-zip php-intl php-ldap
