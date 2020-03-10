@@ -1,6 +1,8 @@
 FROM centos:7
 
 ENV APPLICATION application
+ENV SERVER_NAME localhost
+ENV SERVER_ADMIN admin@example.com
 
 LABEL Maintainer="Maykon Facincani <facincani.maykon@gmail.com>"
 LABEL Description="Apache 2.4 & PHP 7.3 based on CentOS Linux."
@@ -25,12 +27,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 ADD php.d /etc/php.d
 
 ADD conf.d /etc/httpd/conf.d
-
-RUN rm /etc/httpd/conf.d/welcome.conf
-RUN rm /etc/httpd/conf.d/ssl.conf
-
-
-ADD ssl /etc/apache2/ssl/
 
 # Create Containr User
 # user/user
