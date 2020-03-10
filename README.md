@@ -17,7 +17,9 @@ This images contains an instance of apache 2.4 and php 7.3 on port 80, based on 
 
 |  Environment |       Type       | Default |                        Usage                        |
 |:------------:|:----------------:|:-------:|:---------------------------------------------------:|
-|    APPLICATION   |      String      | application |                Set the application name               |
+|    APPLICATION   |      String      | application |                Set the application name     |
+|    SERVER_ADMIN  |      String      | admin@example.com |          Set the Apache ServerAdmin option     |
+|    SERVER_NAME   |      String      | localhost   |                Set the Apache ServerName option     |
 
 
 * The following volume is exposed by this image
