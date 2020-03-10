@@ -29,6 +29,7 @@ ADD conf.d /etc/httpd/conf.d
 RUN rm /etc/httpd/conf.d/welcome.conf
 RUN rm /etc/httpd/conf.d/ssl.conf
 
+
 ADD ssl /etc/apache2/ssl/
 
 # Create Containr User
