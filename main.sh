@@ -23,6 +23,7 @@ sudo chmod 775 /var/www/html/$APPLICATION/.env
 # Optimize application
 su -c 'cd /var/www/html/$APPLICATION && php artisan optimize:clear'
 su -c 'cd /var/www/html/$APPLICATION && composer dump-autoload'
+sed -i "s/max_execution_time = 30/max_execution_time = 300/g" /etc/php.ini
 
 # Starts Apache
 /usr/sbin/httpd -DFOREGROUND
